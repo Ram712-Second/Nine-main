@@ -19,7 +19,7 @@ const teamMembers = [
     id: 2,
     name: 'Azad Jamal',
     role: 'Principal Architect & Managing Partner',
-    image: '/web-images/team/azad_jamal_m_arch_iiid_iia_aiia_principal_architect_managing_partner.jpg',
+    image: '/web-images/team/azad_jamal_m_arch_iiid_iia_aiia_principal_architect_managing_partner.png',
     credentials: 'M.Arch, IIID, IIA, AIIIA',
   },
   {
