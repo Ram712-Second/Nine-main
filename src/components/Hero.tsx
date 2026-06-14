@@ -12,7 +12,7 @@ import Autoplay from 'embla-carousel-autoplay';
 
 const heroImages = [
   '/projects/Resorts/MARAMON-RESORT/maramon-resort.png',
-  '/web-images/hero1_2.jpg',
+  '/projects/commercial/SAFEER-MALL/safeer-mall.png',
   '/projects/Hospital/SANJIVANI-HOSPITAL/sanjivani-hospital.png',
 ];
 
