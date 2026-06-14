@@ -43,7 +43,7 @@ const teamMembers = [
   {
     id: 6,
     name: 'Jobin',
-    role: 'Junior Architect',
+    role: 'Senior Engineer',
     image: '/web-images/team/jobin_junior_arhitect.jpg',
   },
 ];
