@@ -11,7 +11,7 @@ import Autoplay from 'embla-carousel-autoplay';
 // import hero3 from '@/assets/hero-3.jpg';
 
 const heroImages = [
-  '/web-images/hero1_1.jpg',
+  '/projects/Resorts/MARAMON-RESORT/maramon-resort.png',
   '/web-images/hero1_2.jpg',
   '/projects/Hospital/SANJIVANI-HOSPITAL/sanjivani-hospital.png',
 ];
