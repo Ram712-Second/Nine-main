@@ -85,10 +85,10 @@ const Team = () => {
           >
             <CarouselContent className="-ml-4">
               {teamMembers.map((member) => (
-                <CarouselItem
+              <CarouselItem
                   key={member.id}
-                  className="pl-4 basis-[60%] sm:basis-[40%] lg:basis-1/4"
-                >
+                  className="pl-4 basis-full md:basis-1/2 lg:basis-1/4"
+              >
                   <div className="group relative overflow-hidden rounded-xl">
                     <div className="aspect-[3/4] h-[400px] overflow-hidden">
                       <img
