@@ -87,10 +87,10 @@ const Team = () => {
               {teamMembers.map((member) => (
               <CarouselItem
                   key={member.id}
-                  className="pl-4 basis-full md:basis-1/2 lg:basis-1/4"
+                  className="pl-4 basis-1/2 md:basis-1/2 lg:basis-1/4"
               >
                   <div className="group relative overflow-hidden rounded-xl">
-                    <div className="aspect-[3/4] h-[400px] overflow-hidden">
+                    <div className="aspect-[3/4] h-[280px] md:h-[400px] overflow-hidden">
                       <img
                         src={member.image}
                         alt={member.name}
