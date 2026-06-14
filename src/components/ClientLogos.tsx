@@ -1,4 +1,3 @@
-```jsx
 import { motion } from 'framer-motion';
 
 const clients = [
@@ -66,4 +65,3 @@ const ClientLogos = () => {
 };
 
 export default ClientLogos;
-```
