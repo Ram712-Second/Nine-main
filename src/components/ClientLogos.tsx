@@ -1,3 +1,4 @@
+```jsx
 import { motion } from 'framer-motion';
 
 const clients = [
@@ -8,7 +9,7 @@ const clients = [
 ];
 
 const ClientLogos = () => {
-  const duplicatedClients = [...clients, ...clients, ...clients, ...clients];
+  const duplicatedClients = [...clients, ...clients];
 
   return (
     <section className="relative overflow-hidden border-y border-border/50 bg-background py-20">
@@ -32,14 +33,12 @@ const ClientLogos = () => {
         {/* Scrolling Logos */}
         <motion.div
           className="flex gap-8 md:gap-16"
-          animate={{
-            x: [0, '-25%'],
-          }}
+          animate={{ x: ['0%', '-50%'] }}
           transition={{
             x: {
               repeat: Infinity,
               repeatType: 'loop',
-              duration: 12,
+              duration: 8,
               ease: 'linear',
             },
           }}
@@ -67,3 +66,4 @@ const ClientLogos = () => {
 };
 
 export default ClientLogos;
+```
