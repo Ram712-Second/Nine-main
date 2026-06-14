@@ -30,7 +30,7 @@ const About = () => {
       start: 'top center',
       onEnter: () => {
         animateCounter(setExperience, 23);
-        animateCounter(setProjects, 250);
+        animateCounter(setProjects, 3000);
         animateCounter(setAwards, 32);
 
         gsap.fromTo(
@@ -78,7 +78,7 @@ const About = () => {
           <div>
             <h2 className="about-text mb-6 text-black">About 9 Architects</h2>
             <p className="about-text text-lg md:text-xl text-black/70 mb-6 font-light leading-relaxed">
-              9 Architects, Kollam is an architecture, construction, and interior design studio based in Kollam, known for delivering integrated design and build solutions across residential, commercial, hospitality, and renovation projects. Established in 2022, the firm was founded with the vision of providing quality architectural and construction services across different budget ranges while maintaining strong design values and execution quality.
+              9 Architects, Kollam is an architecture, construction, and interior design studio based in Kollam, known for delivering integrated design and build solutions across residential, commercial, hospitality, and renovation projects. Established in 2003, the firm was founded with the vision of providing quality architectural and construction services across different budget ranges while maintaining strong design values and execution quality.
             </p>
             <p className="about-text text-lg md:text-xl text-black/70 mb-8 font-light leading-relaxed">
               The studio follows a collaborative and client-focused approach, where architecture is treated not only as building design but as a complete process involving planning, creativity, functionality, and execution. Their workflow emphasizes detailed brainstorming, proactive problem-solving, and close coordination with clients throughout every stage of the project to ensure smooth project delivery.
