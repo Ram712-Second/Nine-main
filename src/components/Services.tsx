@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { Building2, Home, Trees, Ruler, Hammer } from 'lucide-react';
+import { Building2, Home, Trees, Ruler, Hammer, Wrench } from 'lucide-react';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -9,32 +9,44 @@ const services = [
   {
     icon: Building2,
     title: 'Architectural Design',
-    description: 'Innovative and functional architectural solutions tailored to your vision and requirements.',
+    description:
+      'Innovative and functional architectural solutions tailored to your vision and requirements.',
     color: 'from-slate-800 to-slate-900',
   },
   {
     icon: Home,
     title: 'Interior Design',
-    description: 'Creating beautiful, cohesive interior spaces that reflect your style and enhance livability.',
+    description:
+      'Creating beautiful, cohesive interior spaces that reflect your style and enhance livability.',
     color: 'from-blue-900 to-slate-800',
   },
   {
     icon: Trees,
     title: 'Landscape Planning',
-    description: 'Harmonious outdoor environments that complement architectural design and natural surroundings.',
+    description:
+      'Harmonious outdoor environments that complement architectural design and natural surroundings.',
     color: 'from-gray-800 to-slate-900',
   },
   {
     icon: Ruler,
     title: 'Structural Consulting',
-    description: 'Advanced structural engineering expertise ensuring durability, safety, and design precision.',
+    description:
+      'Advanced structural engineering expertise ensuring durability, safety, and design precision.',
     color: 'from-stone-800 to-gray-900',
   },
   {
     icon: Hammer,
-    title: 'Project Execution',
-    description: 'End-to-end project management ensuring quality delivery within timeline and budget.',
+    title: 'Project Management',
+    description:
+      'Comprehensive project coordination and supervision to ensure timely delivery, quality control, and budget efficiency.',
     color: 'from-amber-900 to-slate-900',
+  },
+  {
+    icon: Wrench,
+    title: 'MEP Consultation',
+    description:
+      'Expert Mechanical, Electrical, and Plumbing consulting services for efficient, sustainable, and compliant building systems.',
+    color: 'from-emerald-900 to-slate-900',
   },
 ];
 
