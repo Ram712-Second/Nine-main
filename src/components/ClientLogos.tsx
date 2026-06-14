@@ -8,18 +8,17 @@ const clients = [
 ];
 
 const ClientLogos = () => {
-  // Repeat clients 4 times to ensure seamless loop without gaps on wide screens
   const duplicatedClients = [...clients, ...clients, ...clients, ...clients];
 
   return (
-    <section className="relative bg-background py-20 overflow-hidden border-y border-border/50">
+    <section className="relative overflow-hidden border-y border-border/50 bg-background py-20">
       <div className="mb-12 text-center">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-light text-foreground tracking-tight"
+          className="text-3xl font-light tracking-tight text-foreground md:text-4xl"
         >
           Trusted By Leading Brands
         </motion.h2>
@@ -27,36 +26,35 @@ const ClientLogos = () => {
 
       <div className="relative">
         {/* Gradient overlays */}
-        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background to-transparent z-10" />
-        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent z-10" />
+        <div className="absolute left-0 top-0 bottom-0 z-10 w-20 md:w-32 bg-gradient-to-r from-background to-transparent" />
+        <div className="absolute right-0 top-0 bottom-0 z-10 w-20 md:w-32 bg-gradient-to-l from-background to-transparent" />
 
-        {/* Scrolling logos */}
+        {/* Scrolling Logos */}
         <motion.div
-          className="flex gap-16"
+          className="flex gap-8 md:gap-16"
           animate={{
-            x: [0, "-25%"],
+            x: [0, '-25%'],
           }}
           transition={{
             x: {
               repeat: Infinity,
-              repeatType: "loop",
-              duration: 20,
-              ease: "linear",
+              repeatType: 'loop',
+              duration: 12,
+              ease: 'linear',
             },
           }}
         >
           {duplicatedClients.map((client, index) => (
             <div
               key={`${client.name}-${index}`}
-              className="flex-shrink-0 flex items-center justify-center"
+              className="flex flex-shrink-0 items-center justify-center"
             >
-              <div className="group relative w-60 h-32 flex items-center justify-center">
-                {/* Premium Glassmorphic Card Container for Logo */}
-                <div className="w-full h-full rounded-xl border border-border/30 bg-card/30 backdrop-blur-sm flex items-center justify-center p-3 transition-all duration-500 group-hover:border-border/80 group-hover:bg-card group-hover:shadow-lg group-hover:shadow-foreground/5">
+              <div className="group relative flex h-24 w-40 items-center justify-center md:h-32 md:w-60">
+                <div className="flex h-full w-full items-center justify-center rounded-xl border border-border/30 bg-card/30 p-3 backdrop-blur-sm transition-all duration-500 group-hover:border-border/80 group-hover:bg-card group-hover:shadow-lg group-hover:shadow-foreground/5">
                   <img
                     src={client.logo}
                     alt={client.name}
-                    className="max-w-[85%] max-h-[85%] object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
+                    className="max-h-[85%] max-w-[85%] object-contain grayscale opacity-60 transition-all duration-500 group-hover:scale-105 group-hover:grayscale-0 group-hover:opacity-100"
                   />
                 </div>
               </div>
@@ -69,4 +67,3 @@ const ClientLogos = () => {
 };
 
 export default ClientLogos;
-
