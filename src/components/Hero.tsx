@@ -104,6 +104,7 @@ const Hero = () => {
                 <img
                   src={image}
                   alt={`Architecture ${index + 1}`}
+                  loading={index === 0 ? "eager" : "lazy"}
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-black/40" />
