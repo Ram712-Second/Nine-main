@@ -109,6 +109,18 @@ const categoryData: Record<string, CategoryData> = {
       { id: 'res-1', img: '/projects/residential/ANAS-FLAT/anas-flat.png', url: '#', height: 400, title: 'ANAS FLAT', description: 'Modern residential living' },
     ],
   },
+  religious: {
+    title: 'Religious Projects',
+    subtitle: 'Sacred Spaces',
+    description: 'Places of worship designed for spiritual reflection and community gathering.',
+    images: [
+      { id: 'rel-1', img: '/projects/Religious-projects/Ithikara-Mosque/ithikara-mosque-1.png', url: '#', height: 400, title: 'ITHIKARA MOSQUE', description: 'Modern mosque architecture' },
+      { id: 'rel-2', img: '/projects/Religious-projects/Ithikara-Mosque/ithikara-mosque-2.png', url: '#', height: 400, title: 'ITHIKARA MOSQUE - VIEW 2', description: 'Mosque interior view' },
+      { id: 'rel-3', img: '/projects/Religious-projects/Ithikara-Mosque/ithikara-mosque-3.png', url: '#', height: 400, title: 'ITHIKARA MOSQUE - VIEW 3', description: 'Mosque exterior detail' },
+      { id: 'rel-4', img: '/projects/Religious-projects/Chapel-Peringalam/chapel-peringalam-1.png', url: '#', height: 400, title: 'CHAPEL PERINGALAM', description: 'Chapel design' },
+      { id: 'rel-5', img: '/projects/Religious-projects/Thazhava-Mosque/thazhava-mosque-1.png', url: '#', height: 400, title: 'THAZHAVA MOSQUE', description: 'Community mosque' },
+    ],
+  },
 };
 
 const ProjectCategoryPage = () => {

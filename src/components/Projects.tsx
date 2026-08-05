@@ -66,6 +66,15 @@ const projects = [
     slug: "residential",
     image: "/projects/residential/ANAS-FLAT/anas-flat.png",
   },
+  {
+    id: 8,
+    title: "Religious Projects",
+    subtitle: "Sacred Spaces",
+    description: "Places of worship designed for spiritual reflection and community gathering",
+    color: "from-rose-900 to-slate-800",
+    slug: "religious",
+    image: "/projects/Religious-projects/Ithikara-Mosque/ithikara-mosque-1.png",
+  },
 ];
 
 const ProjectCard = ({ project, index }: { project: typeof projects[0]; index: number }) => {
